@@ -1,4 +1,4 @@
-package br.com.polimorfismo;
+package br.com.polimorfismo.carro;
 
 public class Principal {
     public static void main(String[] args) {
