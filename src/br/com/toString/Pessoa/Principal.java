@@ -1,4 +1,4 @@
-package br.com.toString;
+package br.com.toString.Pessoa;
 
 import java.util.ArrayList;
 

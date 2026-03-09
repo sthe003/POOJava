@@ -1,6 +1,4 @@
-package br.com.toString;
-
-import java.util.ArrayList;
+package br.com.toString.Pessoa;
 
 public class Pessoa {
     private String nome;
