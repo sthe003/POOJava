@@ -1,4 +1,4 @@
-package projetos.googleBooksAPI;
+package br.com.consumindoAPIs.googleBooksAPI.googleBooksAPI;
 
 import java.io.IOException;
 import java.net.URI;
@@ -19,7 +19,6 @@ public class buscandoLivro {
         String endereco = "https://www.googleapis.com/books/v1/volumes?q="
                 + busca
                 + "&key=" + apiKey;
-
 
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
