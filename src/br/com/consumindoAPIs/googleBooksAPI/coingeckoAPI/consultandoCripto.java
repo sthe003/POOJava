@@ -15,9 +15,11 @@ public class consultandoCripto {
         var consulta = leitura.nextLine().replace(" ", "+");
 
         String apiKey = System.getenv("COINGECKO_API");
-        String endereco = "https://api.coingecko.com/api/v3/ping?x_cg_demo_api_key="
+        String endereco = "https://api.coingecko.com/api/v3/simple/price?ids="
                 + consulta
-                + "&key=" + apiKey;
+                + "&vs_currencies=brl"
+                + "&x_cg_demo_api_key="
+                + apiKey;
 
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
