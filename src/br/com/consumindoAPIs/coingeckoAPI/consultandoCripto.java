@@ -1,4 +1,4 @@
-package br.com.consumindoAPIs.googleBooksAPI.coingeckoAPI;
+package br.com.consumindoAPIs.coingeckoAPI;
 
 import java.io.IOException;
 import java.net.URI;

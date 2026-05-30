@@ -1,4 +1,4 @@
-package br.com.consumindoAPIs.googleBooksAPI.googleBooksAPI;
+package br.com.consumindoAPIs.googleBooksAPI;
 
 import java.io.IOException;
 import java.net.URI;
