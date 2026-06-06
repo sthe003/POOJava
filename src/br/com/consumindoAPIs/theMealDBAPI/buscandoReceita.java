@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class buscandoReceita {
     public static void main(String[] args) throws IOException, InterruptedException {
                 Scanner leitura = new Scanner(System.in);
-                System.out.println("Qual receita está buscando?  ");
+                System.out.println("Qual receita está buscando? ");
                 var nomeReceita = leitura.nextLine();
 
                 String endereco = "https://www.themealdb.com/api/json/v1/1/search.php?s=" + nomeReceita;
