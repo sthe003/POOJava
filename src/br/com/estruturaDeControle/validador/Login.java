@@ -1,24 +1,24 @@
-package br.com.estruturaDeControle.validador;
+    package br.com.estruturaDeControle.validador;
 
-import java.io.IOException;
-import java.util.Scanner;
+    import java.io.IOException;
+    import java.util.Scanner;
 
-public class Login {
-    public static void main(String[] args) throws IOException {
+    public class Login {
+        public static void main(String[] args) throws IOException {
 
-    try {
-        Scanner leitor = new Scanner(System.in);
-        System.out.println("Informe sua senha: ");
-        var senha = leitor.nextLine();
+        try {
+            Scanner leitor = new Scanner(System.in);
+            System.out.println("Informe sua senha: ");
+            var senha = leitor.nextLine();
 
 
-        if(senha.length()<8){
-            throw new SenhaInvalidaException("A senha deve conter ao menos 8 caracteres!");
+            if(senha.length()<8){
+                throw new SenhaInvalidaException("A senha deve conter ao menos 8 caracteres!");
+            }
+            System.out.println("Senha cadastrada!");
+
+        } catch (SenhaInvalidaException e){
+            System.out.println(e.getMessage());
         }
-        System.out.println("Senha cadastrada!");
-
-    } catch (SenhaInvalidaException e){
-        System.out.println(e.getMessage());
+        }
     }
-    }
-}
