@@ -9,12 +9,16 @@ public class Login {
     try {
         Scanner leitor = new Scanner(System.in);
         System.out.println("Informe sua senha: ");
-        var senha = leitor.nextInt();
+        var senha = leitor.nextLine();
 
+
+        if(senha.length()<8){
+            throw new SenhaInvalidaException("A senha deve conter ao menos 8 caracteres!");
+        }
         System.out.println("Senha cadastrada!");
 
     } catch (SenhaInvalidaException e){
-        System.out.println("Senha com menos de 8 caracteres " +e.getMessage());
+        System.out.println(e.getMessage());
     }
     }
 }
