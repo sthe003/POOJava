@@ -14,14 +14,10 @@ import java.util.Scanner;
 
 public class Principal {
     public static void main(String[] args) throws IOException, InterruptedException {
-
         Scanner leitura = new Scanner(System.in);
         System.out.println("Digite o cep: ");
         var busca = leitura.nextLine();
 
-        ConsultaCep consultaCep = new ConsultaCep();
-        Endereco endereco = consultaCep.buscaEndereco(busca);
 
-        System.out.println(endereco);
     }
 }
