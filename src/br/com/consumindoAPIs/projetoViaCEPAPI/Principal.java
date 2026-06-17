@@ -11,6 +11,10 @@ public class Principal {
         System.out.println("Digite o cep: ");
         var busca = leitura.nextLine();
 
+        ConsultaCep consultaCep = new ConsultaCep();
+        Endereco novoEndereco = consultaCep.buscaEndereco(busca);
 
+        GeradorDeArquivo gerador = new GeradorDeArquivo();
+        gerador.salvaJson(novoEndereco);
     }
 }
